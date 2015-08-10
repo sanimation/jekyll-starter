@@ -3,7 +3,7 @@ title: Jekyll Starter
 email: contact@efficiencesoftware.fr
 description: > # this means to ignore newlines until "baseurl:"
   Jekyll starter.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/jekyll-starter" # the subpath of your site, e.g. /blog/
 url: "http://sanimation.github.io/jekyll-starter/" # the base hostname & protocol for your site
 
 # Build settings
