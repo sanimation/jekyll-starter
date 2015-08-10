@@ -1,1 +1,1 @@
-# sample-style-guide
+# Jekyll Starter
