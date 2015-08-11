@@ -4,3 +4,5 @@ bower_components
 Gemfile.lock
 _builds
 _steps
+.bundle
+_projects

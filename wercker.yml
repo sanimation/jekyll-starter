@@ -1,0 +1,59 @@
+# This references the default Ruby container from
+# the Docker Hub.
+# https://registry.hub.docker.com/_/ruby/
+# If you want to use a specific version you would use a tag:
+# ruby:2.2.2
+box: shawnzhu/ruby-nodejs
+# You can also use services such as databases. Read more on our dev center:
+# http://devcenter.wercker.com/docs/services/index.html
+# services:
+    # - postgres
+    # http://devcenter.wercker.com/docs/services/postgresql.html
+
+    # - mongodb
+    # http://devcenter.wercker.com/docs/services/mongodb.html
+
+dev:
+  steps:
+    - bundle-install
+    
+    - internal/watch:
+        code: |
+          bundle exec jekyll serve
+        reload: true
+
+# This is the build pipeline. Pipelines are the core of wercker
+# Read more about pipelines on our dev center
+# http://devcenter.wercker.com/docs/pipelines/index.html
+build:
+  steps:
+    # Run a smart version of bundle install
+    # which improves build execution time of
+    # future builds
+    - bundle-install
+
+    # Generate staging, no drafts in here
+    - script:
+        name: generate staging site
+        code: |-
+          bundle exec jekyll build --trace
+          ls -l ./_site
+    - script:
+        name: html proofer
+        code: |
+          bundle exec htmlproof ./_site --disable-external
+    # Do not allow indexing on staging
+    - create-file:
+        name: generate staging robots.txt
+        filename: ./_site/robots.txt
+        content: |-
+          # This is a staging version
+          # no need to index it.
+          User-agent: *
+          Disallow: /
+
+deploy :
+  steps :
+    - lukevivier/gh-pages:
+        token: $GIT_TOKEN
+        basedir: _site
