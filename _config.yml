@@ -25,3 +25,5 @@ exclude:
   - bower_components
   - node_modules
   - vendor
+  - builds
+  - wercker.yml
