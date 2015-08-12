@@ -6,6 +6,15 @@
 @import "settings";
 @import "foundation";
 
+.top-bar {
+	margin-top: 10px;
+}
+
+.content {
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
 // Or selectively include components
 // @import
 //   "foundation/components/accordion",
