@@ -38,10 +38,6 @@ build:
         code: |-
           bundle exec jekyll build --trace
           ls -l ./_site
-    - script:
-        name: html proofer
-        code: |
-          bundle exec htmlproof ./_site --disable-external
     # Do not allow indexing on staging
     - create-file:
         name: generate staging robots.txt
