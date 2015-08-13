@@ -11,9 +11,25 @@
 }
 
 .content {
-	padding-bottom: 50px;
 	padding-top: 50px;
 }
+
+.solution {
+	background-color: $primary-color;
+	color: $white;
+	height: 250px;
+}
+
+.baseline {
+	padding-top: 50px;
+	font-size: 72px;
+    line-height: 1;
+}
+
+.my-icon {
+	color: $primary-color;
+}
+
 
 // Or selectively include components
 // @import
