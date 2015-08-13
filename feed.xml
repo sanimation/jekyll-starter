@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The World of Static Web App</title>
+    <description>Jekyll starter.
+</description>
+    <link>http://sanimation.github.io/jekyll-starter//jekyll-starter/</link>
+    <atom:link href="http://sanimation.github.io/jekyll-starter//jekyll-starter/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 13 Aug 2015 06:26:25 +0000</pubDate>
+    <lastBuildDate>Thu, 13 Aug 2015 06:26:25 +0000</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+  </channel>
+</rss>
