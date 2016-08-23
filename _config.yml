@@ -1,31 +1,35 @@
-# Site settings
+---
 title: The World of Static Web App
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: contact@efficiencesoftware.fr
-description: > # this means to ignore newlines until "baseurl:"
+description: |
   Jekyll starter.
-baseurl: "/jekyll-starter" # the subpath of your site, e.g. /blog/
-url: "http://sanimation.github.io/jekyll-starter/" # the base hostname & protocol for your site
-
-# Build settings
+baseurl: "/jekyll-starter"
+url: http://sanimation.github.io/jekyll-starter/
 markdown: kramdown
 permalink: pretty
-
 sass:
-    sass_dir: _sass
-
+  sass_dir: _sass
 exclude:
-  - CHANGELOG.md
-  - LICENSE.txt
-  - README.md
-  - VERSION
-  - Gemfile.lock
-  - Gemfile
-  - Guardfile
-  - Rakefile
-  - bower.json
-  - bower_components
-  - node_modules
-  - vendor
-  - _builds
-  - wercker.yml
-  - _steps
+- CHANGELOG.md
+- LICENSE.txt
+- README.md
+- VERSION
+- Gemfile.lock
+- Gemfile
+- Guardfile
+- Rakefile
+- bower.json
+- bower_components
+- node_modules
+- vendor
+- _builds
+- wercker.yml
+- _steps
