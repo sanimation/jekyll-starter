@@ -1,4 +1,0 @@
-# This is a staging version
-# no need to index it.
-User-agent: *
-Disallow: /
