@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The World of Static Web App</title>
+    <title>Jam rocks</title>
     <description>Jekyll starter.
 </description>
     <link>http://sanimation.github.io/jekyll-starter//jekyll-starter/</link>
     <atom:link href="http://sanimation.github.io/jekyll-starter//jekyll-starter/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 04 Mar 2017 13:22:46 +0000</pubDate>
-    <lastBuildDate>Sat, 04 Mar 2017 13:22:46 +0000</lastBuildDate>
-    <generator>Jekyll v3.4.1</generator>
+    <pubDate>Thu, 22 Jun 2017 13:51:36 -0400</pubDate>
+    <lastBuildDate>Thu, 22 Jun 2017 13:51:36 -0400</lastBuildDate>
+    <generator>Jekyll v3.5.0</generator>
     
   </channel>
 </rss>

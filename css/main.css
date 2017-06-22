@@ -6340,3 +6340,7 @@ th.hide-for-touch {
 
 .my-icon {
   color: #DF4949; }
+
+p > img {
+  padding-top: 50px;
+  padding-bottom: 50px; }
