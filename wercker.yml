@@ -16,7 +16,7 @@ box: shawnzhu/ruby-nodejs
 dev:
   steps:
     - bundle-install
-    
+
     - internal/watch:
         code: |
           bundle exec jekyll serve
@@ -36,6 +36,7 @@ build:
     - script:
         name: generate staging site
         code: |-
+          echo "ruby version $(ruby --version) running"
           bundle exec jekyll build --trace
           ls -l ./_site
     # Do not allow indexing on staging
